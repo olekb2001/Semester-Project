@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content content2 content3"
+    "sidebar footer footer footer"
+}
+/* nav start */
+
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-container .nav-links{
+    list-style: none;
+    display:flex;   
+    
+}
+.nav-container .nav-links li a{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 20px;
+    position: relative;
+    color: #57cc99;
+    text-transform: uppercase;
+    padding-bottom: 0.2rem;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.nav-container .nav-links li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:0;
+    height: 2px;
+    background-color: #e4c1f9;
+    transition: width 0.25s ease-out;
+}
+.nav-container .nav-links li a:hover:before{
+    width: 100%;
+
+}
+
+.nav-container .nav-links li a:hover{
+    cursor: pointer;
+}
+/* navbar end */
+/* hero start */
+.hero-image{
+    background-image: linear-gradient(rgba(228, 193, 249, 0.5), rgba(0, 0, 0, 0.6)), url(./images/hero\ photo\ guro.jpg);
+    height: 100%;
+    background-position:0% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+.hero-image .hero-text{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255)
+}
+.hero-image .hero-text h1{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+}
+.hero-image .hero-text .hero-paragraph{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/* hero end */
+/* sidebar start */
+
+
+
+.sidebar .sidebar-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+    margin-left:2rem
+}
+
+.sidebar .sidebar-container .sidebar-header{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:black;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    
+}
+.sidebar .sidebar-container .sidebar-list li{
+    color: #22577a;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    list-style: none;  
+}
+.sidebar .sidebar-container .sidebar-list li i{
+    margin-right: 0.5rem;
+}
+
+.sidebar .sidebar-container .sidebar-list li a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:black;
+}
+.sidebar .sidebar-container .sidebar-list li a:hover{
+    color: #d08af8;
+    cursor: pointer;
+    
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: #22577a;
+}
+main{
+    background-color: #e4c1f9;
+    grid-area: main;
+}
+.sidebar{
+    background-color: #c7f9cc;
+    grid-area: sidebar;
+}
+.content{
+    background-color: #38a3a5;
+    grid-area: content;
+}
+.content2{
+    background-color:#57cc99;
+    grid-area: content2;
+}
+.content3{
+    background-color:#80ed99;
+    grid-area: content3;
+}
+.footer{
+    background-color: #22577a;
+    grid-area: footer;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-container .nav-links li a {
+        margin: 1rem 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav"
+            "main"
+            "content"
+            "content2"
+            "content3"
+            "sidebar"
+            "footer";
+    }
+
+}
+
+
