@@ -25,7 +25,9 @@
 }
 .nav-container .nav-links{
     list-style: none;
-    display:flex;   
+    display:flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .nav-container .nav-links li a{
@@ -39,6 +41,9 @@
     display: inline-block;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+}
+.nav-container .nav-links li img{
+    width: 6rem;
 }
 .nav-container .nav-links li a::before{
     content: "";
@@ -61,13 +66,13 @@
 /* navbar end */
 /* hero start */
 .hero-image{
-    background-image: linear-gradient(rgba(228, 193, 249, 0.5), rgba(0, 0, 0, 0.6)), url(./images/hero\ photo\ guro.jpg);
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)),
+    url(/images/mammoth-1257288_1920.jpg);
     height: 100%;
     background-position:0% 10%;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-   
+    position: relative;   
 }
 .hero-image .hero-text{
     text-align: center;
@@ -87,6 +92,19 @@
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+}
+.hero-image .hero-text button{
+    width: 180px;
+    height: 78px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background: #22577A;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+
 }
 
 /* hero end */
@@ -124,6 +142,11 @@
     font-weight: 400;
     color:black;
 }
+.sidebar .sidebar-container .sidebar-list .bottom-sidebar p{
+    color:black;
+    font-size: 15px;
+}
+
 .sidebar .sidebar-container .sidebar-list li a:hover{
     color: #d08af8;
     cursor: pointer;
