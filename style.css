@@ -8,12 +8,14 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-rows: 0.4fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr ;
     grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
     "sidebar content content2 content3"
-    "sidebar footer footer footer"
+    "sidebar content4 content4 content3"
+    "sidebar content5 content5 content6"
+    "sidebar footer footer footer";
 }
 /* nav start */
 
@@ -28,7 +30,14 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    
+}
+.hamburger-menu {
+    display: none;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
 }
 .nav-container .nav-links li a{
     margin-left: 5rem;
@@ -57,81 +66,100 @@
 }
 .nav-container .nav-links li a:hover:before{
     width: 100%;
-
 }
 
 .nav-container .nav-links li a:hover{
     cursor: pointer;
 }
-/* navbar end 1*/
+/* navbar end */
 /* hero start */
 .hero-image{
-    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)),
-    url(/images/mammoth-1257288_1920.jpg);
-    height: 100%;
-    background-position:0% 10%;
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/mammoth-1257288_1920.jpg);
+    min-height: 80vh; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;   
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding-top: 6rem;
+    overflow: hidden;
+
+    
 }
 .hero-image .hero-text{
     text-align: center;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    max-width: 90%; 
+    font-size: 1.5rem; 
+    padding: 10px;
+    border-radius: 5px;
+    overflow:hidden;
+    
 }
 .hero-image .hero-text h1{
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-size: px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    margin-top: 2.5rem;
     
 }
 .hero-image .hero-text .hero-paragraph{
     font-size: 20px;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 450;
+    margin-top: 2rem;;
 }
 .hero-image .hero-text button{
     width: 180px;
     height: 78px;
     margin-top: 2rem;
     border-radius: 10px;
+    text-align: center;
     background: #22577A;
     color: #FFF;
-    font-size: 15px;
-    font-style: normal;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     border: none;
-
 }
-
+.hero-image .hero-text button:hover{
+    /* color when hovering- all buttons */
+    background:#245f87;    
+    cursor:pointer;
+}
+.hero-image .hero-text button:active{
+    /* all buttons active */
+    background:#26648e;    
+}
 /* hero end */
 /* sidebar start */
-
-
-
 .sidebar .sidebar-container{
     display: flex;
     flex-direction: column;
     margin-top:2rem;
-    margin-left:2rem
+    margin-left:2rem;
+    
 }
 
 .sidebar .sidebar-container .sidebar-header{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family:  "Playfair Display", serif;
+    font-weight: 600;
     color:black;
     margin-bottom: 2rem;
-    font-size: 30px;
+    font-size: 32px;
+    
     
 }
 .sidebar .sidebar-container .sidebar-list li{
     color: #22577a;
-    margin-bottom: 1rem;
+    padding: 40px 10px;
     font-size: 24px;
     list-style: none;  
+    
 }
 .sidebar .sidebar-container .sidebar-list li i{
     margin-right: 0.5rem;
@@ -142,58 +170,399 @@
     font-weight: 400;
     color:black;
 }
-.sidebar .sidebar-container .sidebar-list .bottom-sidebar p{
+
+.sidebar .sidebar-container .sidebar-list .bottom-sidebar1 p{
     color:black;
     font-size: 15px;
+    font-weight: 700;
 }
 
 .sidebar .sidebar-container .sidebar-list li a:hover{
     color: #d08af8;
     cursor: pointer;
+}
+/* Sidebar End */
+/* Card Beginning */
+.card-content{
+    position: relative;
+    height: 25.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-line{
+    height: 3rem;
+    border-left:5px solid rgba(87, 204, 153, 1);
+    position: absolute;
+    left: 15%;
+    top:35%
+}
+.horizontal-line{
+    width: 3rem;
+    border-bottom:5px solid rgba(87, 204, 153, 1);
+    position: absolute;
+    left: 15%;
+    top:80%;
+}
+.card-content h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 38px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.card-content p{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 211px;
+    max-width: 250px; 
+}
+.card-content .contribute-button{
+    width: 9.25rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #57CC99;
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+.card-content .contribute-button:hover{
+    background:#66C099;
+    cursor: pointer;
+}
+.card-content .contribute-button:active{
+    /* contribute button sctive colors */
+    background:#6bc8a0;
+}
+/* card nr 4 */
+.content4 .content4-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+}
+.content4 .content4-card h2{
+    font-family: "Racing Sans One", sans-serif;
+    color:#ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.content4 .content4-card p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    color:#ffffff;
+    padding: 5px;
+}
+.content4 .content4-card a{
+    color: #57CC99;
+    font-size: 4.9rem;
+    padding-top: 20px;
+}
+/* card 4 end */
+/* card 5 start */
+.content5 .content5-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    
+
+}
+.content5 .content5-card h2{
+    font-family: "Racing Sans One", sans-serif;
+    color:#ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.content5 .content5-card p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    color:#ffffff;
+    padding: 5px;
+}
+.content5 .content5-card a{
+    color: #57CC99;
+    font-size: 4.9rem;
+    padding-top: 20px;
+}
+/* card 5 end */
+/* card 6 start */
+.content6 .content6-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+}
+.content6 .content6-card h2{
+    font-family: "Racing Sans One", sans-serif;
+    color:#ffffff;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.content6 .content6-card p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    color:#ffffff;
+    padding: 5px;
+    margin-top: 2rem;
+}
+.content6 .content6-card a{
+    color: #57CC99;
+    font-size: 4.9rem;
+    padding-top: 20px;
+    margin-top: 2.7rem;
+}
+/* card 6 end */
+/* footer start */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between columns */
+    padding: 1rem; /* Add some padding for better spacing */
+    color: #fff; /* Text color for the footer */
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content ul li h3 {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
     
 }
 
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+.footer-content ul li a i{
+    color: #57cc99;
+    margin-right: 0.5rem;
+}
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+.footer-content .second-column-footer li p{
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+.footer-content .third-column-footer li p{
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+.footer-content .third-column-footer li a{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.footer-content .third-column-footer li i{
+    color: #57cc99;
+    margin-right: 0.5rem;
+    font-size: 20px;
+}
 
+.first-column-footer,
+.second-column-footer {
+    flex: 1; /* Ensure both columns take equal space */
+    margin-right: 1rem; /* Add some margin between columns */
+}
 nav{
     grid-area: nav;
     background-color: #22577a;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 main{
-    background-color: #e4c1f9;
     grid-area: main;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .sidebar{
     background-color: #c7f9cc;
     grid-area: sidebar;
+    top: 6.5rem;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 25%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 999;
 }
 .content{
-    background-color: #38a3a5;
     grid-area: content;
 }
 .content2{
-    background-color:#57cc99;
     grid-area: content2;
 }
+.content,
+.content2 {
+    background-color: #22577A;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; 
+}
+/* content 3 grid area */
 .content3{
     background-color:#80ed99;
     grid-area: content3;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    height: 1033px;
+    background-image: url(./images/reading-2762010_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* content 4 grid area */
+.content4{
+    
+    grid-area: content4;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    height:500px;
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/people-219985_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+/* content 5 grid area */
+.content5{
+    grid-area: content5;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    height:800px;
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/jesse-orrico-60373.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+.content6{
+    grid-area: content6;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height:800px;
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/william-bout-264826.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+/* footer grid area */
 .footer{
     background-color: #22577a;
     grid-area: footer;
 }
 
-
+@media (max-width: 1425px) {
+    .content4 .content4-card p {
+        font-size: 19px;
+    }
+     .content5 .content5-card p,
+    .content6 .content6-card p {
+        font-size: 19px;
+    }
+}
 @media (max-width: 768px) {
-    .nav-container .nav-links {
+    .nav-container {
         flex-direction: column;
     }
 
-    .nav-container .nav-links li a {
-        margin: 1rem 0;
+    .nav-container .nav-links {
+        display: none; /* Hide nav links */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
+    .nav-container .nav-links li a {
+        margin: 0.5rem 0;
+    }
+    .nav-container .nav-links li img {
+        display: none; /* Hide the logo */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-container.active .nav-links {
+        display: flex; /* Show nav links when active */
+    }
+
+    .content4 .content4-card h2,
+    .content5 .content5-card h2,
+    .content6 .content6-card h2 {
+        font-size: 1.2rem;
+    }
+    .content4 .content4-card p,
+    .content5 .content5-card p,
+    .content6 .content6-card p {
+        font-size: 0.8rem;
+    }
+    .content4 .content4-card a,
+    .content5 .content5-card a,
+    .content6 .content6-card a {
+        font-size: 4rem;
+    }
+    
     .grid-container {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -202,10 +571,108 @@ main{
             "content"
             "content2"
             "content3"
-            "sidebar"
+            "content4"
+            "content5"
+            "content6"
+            "footer";
+    }
+    .sidebar {
+        display: none; /* Hide the sidebar */
+    }
+    
+    .content4 {
+        grid-area: content4;
+        margin: 0 auto; /* Center the content horizontally */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .content4 .content4-card p {
+        font-size: 23px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-container .nav-links {
+        display: none; /* Hide nav links */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-container .nav-links li a {
+        margin: 0.25rem 0;
+    }
+    .nav-container .nav-links li img {
+        display: none; /* Hide the logo */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-container.active .nav-links {
+        display: flex; /* Show nav links when active */
+    }
+
+    .content4 .content4-card h2,
+    .content5 .content5-card h2,
+    .content6 .content6-card h2 {
+        font-size: 2rem;
+    }
+
+    .content4 .content4-card p,
+    .content5 .content5-card p,
+    .content6 .content6-card p {
+        font-size: 1.2rem;
+    }
+
+    .content4 .content4-card a,
+    .content5 .content5-card a,
+    .content6 .content6-card a {
+        font-size: 3.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav"
+            "main"
+            "content"
+            "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
             "footer";
     }
 
+    .sidebar {
+        display: none; /* Hide the sidebar */
+    }
+
+    .content4 {
+        grid-area: content4;
+        margin: 0 auto; /* Center the content horizontally */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .content4 .content4-card p {
+        font-size: 22px;
+    }
 }
-
-
