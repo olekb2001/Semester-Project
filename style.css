@@ -271,6 +271,7 @@
     font-size: 23px;
     color:#ffffff;
     padding: 5px;
+    text-align: center;
 }
 .content4 .content4-card a{
     color: #57CC99;
@@ -334,6 +335,7 @@
     color:#ffffff;
     padding: 5px;
     margin-top: 2rem;
+    text-align: center;
 }
 .content6 .content6-card a{
     color: #57CC99;
@@ -549,12 +551,12 @@ main{
     .content4 .content4-card h2,
     .content5 .content5-card h2,
     .content6 .content6-card h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .content4 .content4-card p,
     .content5 .content5-card p,
     .content6 .content6-card p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     .content4 .content4-card a,
     .content5 .content5-card a,
@@ -580,6 +582,15 @@ main{
     .sidebar {
         display: none; /* Hide the sidebar */
     }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content ul {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -618,7 +629,7 @@ main{
     .content4 .content4-card p,
     .content5 .content5-card p,
     .content6 .content6-card p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .content4 .content4-card a,
@@ -626,6 +637,20 @@ main{
     .content6 .content6-card a {
         font-size: 3.5rem;
     }
+    .content{
+        margin-right: 2rem;
+    }
+    .content2{
+        margin-right: 2rem;
+    }
+    .content4{
+        margin-right: 2rem;
+    }
+    .content5{
+        margin-right: 2rem;
+    }
+
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
