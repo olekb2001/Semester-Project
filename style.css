@@ -629,9 +629,33 @@
     color: #000000;
 }
 /* sixth content end */
-
-
-
+/* for kids hero */
+.hero-image-exhibitions-forkids{
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/genoa-956405_1920.jpg);
+    min-height: 70vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+.hero-image-exhibitions-forkids .hero-text-exhibitions-forkids{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    max-width: 90%; 
+    font-size: 3rem; 
+    border-radius: 5px;
+    overflow:hidden;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+/* for kids end */
 
 
 
@@ -922,6 +946,9 @@ main{
         width: 100%;
     }
     .hero-image-exhibitions .hero-text-exhibitions{
+        font-size: 2rem;
+    }
+    .hero-image-exhibitions-forkids .hero-text-exhibitions-forkids{
         font-size: 2rem;
     }
 }
