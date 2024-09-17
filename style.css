@@ -628,7 +628,7 @@
     font-weight: 400;
     color: #000000;
 }
-
+/* sixth content end */
 
 
 
@@ -821,6 +821,7 @@ main{
     }
     /* first page css end */
     /* second page css start */
+    
 }
 @media (max-width: 768px) {
     /* first page css */
@@ -894,7 +895,35 @@ main{
     }
     /* first page css end */
     /* second page css start*/
-
+    .container-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cosmology-container{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .robotics-container{
+        width: 100%;
+    }
+    .container-wrapper-second-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .evolution-container{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .biology-container{
+        width: 100%;
+    }
+    .hero-image-exhibitions .hero-text-exhibitions{
+        font-size: 2rem;
+    }
 }
 
 
