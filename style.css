@@ -912,9 +912,106 @@
     background:#6bc8a0;
 }
 /* third content end */
+/* finish payment section */
+.hero-image-finish-payment{
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/pexels-pixabay-50987.jpg);
+    min-height: 70vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+.hero-image-finish-payment .hero-text-finish-payment h1{
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2.5rem;
+    text-align: center;
+
+}
 
 
 
+.payment-container{
+    display: flex;
+    border: 2px solid #000000;
+    width: 60%;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #dcdcdc;
+}
+.payment-container .payment-info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+}
+.payment-info-content h2 {
+    font-family: "roboto", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+.payment-info-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 450;
+}
+.payment-form .form-group,
+.payment-info-content .form-group {
+    margin-bottom: 1.5rem;
+}
+.payment-form label,
+.payment-info-content label {
+    display: block; /* Ensure labels are block elements */
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem; /* Space between label and input */
+    font-weight: 450;
+}
+.payment-form input,
+.payment-info-content input {
+    padding: 0.70rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.payment-form button {
+    width: 100%; /* Ensure button takes full width */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    background-color: #22577A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.payment-form button:hover{
+    background:#245f87;
+}
+.payment-form button:active{
+    background:#26648e;
+}
+/* payment form end */
 
 
 
@@ -1099,6 +1196,10 @@ main{
     }
     /* first page css end */
     /* second page css start */
+    /* payment info */
+    .payment-container{
+        width: 70%;
+    }
 }
 @media (max-width: 768px) {
     /* first page css */
@@ -1221,6 +1322,10 @@ main{
     }
     .contribute-100-container{
         width: 100%;
+    }
+    /* payment info */
+    .payment-container{
+        width: 95%;
     }
 }
 
