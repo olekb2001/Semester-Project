@@ -656,8 +656,262 @@
     font-family: "Playfair Display", serif;
 }
 /* for kids end */
+/* contribution page start */
+/* hero photo */
+.hero-image-support-museum{
+    background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/library-1132573_1920.jpg);
+    min-height: 70vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+.hero-image-support-museum .hero-text-support-museum h1{
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2.5rem;
+    text-align: center;
+
+}
+.hero-image-support-museum .hero-text-support-museum p{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 1000px;
+    color: #ffffff;
+}
+
+/* wrapper for content*/
+.contribute-wrapper{
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: stretch;
+    width: 95%;
+    margin: 0 auto; /* Center the wrapper */
+    gap: 2rem; /* Optional: Add gap between items */
+}
 
 
+
+/* first content */
+.contribute-25-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    width: 30%;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.contribute-25-container .contribute-25-image-container{
+    width: 100%;
+}
+.contribute-25-container .contribute-25-image-container img{
+    width: 100%; 
+    height: 600px; 
+    max-height: 600px;  
+    object-fit: cover; 
+}
+.contribute-25-container .contribute-25-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contribute-25-container .contribute-25-content h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+.contribute-25-container .contribute-25-content p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contribute-25-container .contribute-25-content button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    background: #57CC99;
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+.contribute-25-container .contribute-25-content button:hover{
+    background:#66C099;
+    cursor: pointer;
+}
+.contribute-25-container .contribute-25-content button:active{
+    /* contribute button sctive colors */
+    background:#6bc8a0;
+}
+/* first content end */
+/* second content start */
+.contribute-50-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    width: 30%;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.contribute-50-container .contribute-50-image-container{
+    width: 100%;
+}
+.contribute-50-container .contribute-50-image-container img{
+    width: 100%; 
+    height: 600px; 
+    max-height: 600px; 
+    object-fit: cover; 
+}
+.contribute-50-container .contribute-50-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contribute-50-container .contribute-50-content h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contribute-50-container .contribute-50-content p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contribute-50-container .contribute-50-content button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    background: #57CC99;
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+.contribute-50-container .contribute-50-content button:hover{
+    background:#66C099;
+    cursor: pointer;
+}
+.contribute-50-container .contribute-50-content button:active{
+    /* contribute button sctive colors */
+    background:#6bc8a0;
+}
+/* second content end */
+/* third content start */
+.contribute-100-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    width: 30%;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.contribute-100-container .contribute-100-image-container{
+    width: 100%;
+}
+.contribute-100-container .contribute-100-image-container img{
+    width: 100%; 
+    height: 600px; 
+    max-height: 600px;
+    object-fit: cover; 
+}
+.contribute-100-container .contribute-100-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contribute-100-container .contribute-100-content h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contribute-100-container .contribute-100-content p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contribute-100-container .contribute-100-content button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    background: #57CC99;
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+.contribute-100-container .contribute-100-content button:hover{
+    background:#66C099;
+    cursor: pointer;
+}
+.contribute-100-container .contribute-100-content button:active{
+    /* contribute button sctive colors */
+    background:#6bc8a0;
+}
+/* third content end */
 
 
 
@@ -845,7 +1099,6 @@ main{
     }
     /* first page css end */
     /* second page css start */
-    
 }
 @media (max-width: 768px) {
     /* first page css */
@@ -950,6 +1203,24 @@ main{
     }
     .hero-image-exhibitions-forkids .hero-text-exhibitions-forkids{
         font-size: 2rem;
+    }
+    /* contribute css*/
+    .contribute-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contribute-25-container{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .contribute-50-container{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .contribute-100-container{
+        width: 100%;
     }
 }
 
