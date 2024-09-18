@@ -411,11 +411,11 @@
 /* wrapper for next contents */
 .container-wrapper{
     display: flex;
-    justify-content: space-between; /* Distribute space between items */
+    justify-content: space-between; 
     align-items: stretch;
     width: 95%;
-    margin: 0 auto; /* Center the wrapper */
-    gap: 2rem; /* Optional: Add gap between items */
+    margin: 0 auto; 
+    gap: 2rem; 
 }
 /* second content start */
 .cosmology-container{
@@ -665,11 +665,11 @@
 /* wrapper for content*/
 .contribute-wrapper{
     display: flex;
-    justify-content: space-between; /* Distribute space between items */
+    justify-content: space-between; 
     align-items: stretch;
     width: 95%;
     margin: 0 auto; /* Center the wrapper */
-    gap: 2rem; /* Optional: Add gap between items */
+    gap: 2rem; 
 }
 /* first content */
 .contribute-25-container{
@@ -1065,7 +1065,7 @@
     flex-direction: column;
     justify-content: center; /* Center content inside containers */
     align-items: center;
-    width: 40%; /* Adjust percentage width for equal spacing */
+    width: 40%; 
     border: 2px solid #000000;
     background-color: #dcdcdc;
     height: 760px;
@@ -1154,7 +1154,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
 .contact-form button:hover {
     background:#245f87;
 }
@@ -1239,9 +1238,6 @@
     color: #000000;
 }
 /* first content end */
-
-
-
 /* second content start*/
 .about-us-container-right{
     display: flex;
@@ -1277,18 +1273,6 @@
     color: #000000;
 }
 /* second content end */
-
-   
-
-
-
-
-
-
-
-
-
-
 /* footer start */
 .footer-container {
     display: flex;
@@ -1659,8 +1643,6 @@ main{
         width: 95%;
     }
 }
-
-
 @media (max-width: 480px) {
     /* first page css start */
     .nav-container {
