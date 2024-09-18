@@ -18,8 +18,6 @@
     "sidebar footer footer footer";
 }
 /* nav start */
-
-
 .nav-container{
     display: flex;
     align-items: center;
@@ -67,7 +65,6 @@
 .nav-container .nav-links li a:hover:before{
     width: 100%;
 }
-
 .nav-container .nav-links li a:hover{
     cursor: pointer;
 }
@@ -98,13 +95,11 @@
     padding: 10px;
     border-radius: 5px;
     overflow:hidden;
-    
 }
 .hero-image .hero-text h1{
     font-weight: 700;
     font-family: "Playfair Display", serif;
     margin-top: 2.5rem;
-    
 }
 .hero-image .hero-text .hero-paragraph{
     font-size: 20px;
@@ -143,7 +138,6 @@
     margin-left:2rem;
     
 }
-
 .sidebar .sidebar-container .sidebar-header{
     font-family:  "Playfair Display", serif;
     font-weight: 600;
@@ -343,22 +337,7 @@
     margin-top: 2.7rem;
 }
 /* card 6 end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Exhibition page start */
-
 .hero-image-exhibitions{
     background-image: linear-gradient(rgba(34, 87, 122, 0.47), rgba(34, 87, 122, 0.47)), url(./images/andrew-ruiz-348421.jpg);
     min-height: 70vh; 
@@ -404,7 +383,6 @@
     max-height: 600px; /* Set a maximum height */
     object-fit: cover; /* Cover the entire container */
 }
-
 .museum-container .museum-container-content{
     padding-top: 20px;
     padding-left: 20px;
@@ -439,10 +417,6 @@
     margin: 0 auto; /* Center the wrapper */
     gap: 2rem; /* Optional: Add gap between items */
 }
-
-
-
-
 /* second content start */
 .cosmology-container{
     display: flex;
@@ -514,8 +488,6 @@
     color: #000000;
 }
 /* third content end*/
-
-
 /* second row start */
 .container-wrapper-second-row{
     display: flex;
@@ -525,7 +497,6 @@
     margin: 0 auto; /* Center the wrapper */
     gap: 2rem; /* Optional: Add gap between items */
 }
-
 /* fourth content start */
 .evolution-container{
     display: flex;
@@ -691,7 +662,6 @@
     max-width: 1000px;
     color: #ffffff;
 }
-
 /* wrapper for content*/
 .contribute-wrapper{
     display: flex;
@@ -701,9 +671,6 @@
     margin: 0 auto; /* Center the wrapper */
     gap: 2rem; /* Optional: Add gap between items */
 }
-
-
-
 /* first content */
 .contribute-25-container{
     display: flex;
@@ -937,9 +904,6 @@
     text-align: center;
 
 }
-
-
-
 .payment-container{
     display: flex;
     border: 2px solid #000000;
@@ -1085,6 +1049,136 @@
     margin-bottom: 1rem;
     font-weight: 600;
 }
+/* contact page */
+.contact-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    width: 95%;
+    margin: 0 auto; 
+    gap: 2rem; 
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+.contact-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content inside containers */
+    align-items: center;
+    width: 40%; /* Adjust percentage width for equal spacing */
+    border: 2px solid #000000;
+    background-color: #dcdcdc;
+    height: 760px;
+}
+.contact-left-container .contact-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.contact-left-container .contact-left-content ul{
+    list-style: none;
+}
+.contact-left-container .contact-left-content ul li{
+    margin-bottom: 3.5rem;
+}
+.contact-left-container .contact-left-content h2 {
+    font-family: "roboto", serif;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.contact-left-container .contact-left-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 450;
+}
+.contact-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 60%; 
+    border: 2px solid #000000;
+    background-color: #dcdcdc;
+    height: 760px;
+}
+.contact-right-container .contact-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.contact-right-container .contact-right-content h2 {
+    font-family: "Roboto", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+.contact-form .form-group {
+    width: 100%; /* Ensure form groups take full width */
+    margin-bottom: 1.5rem;
+}
+.contact-form label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin-bottom: 0.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ensure inputs take full width */
+    padding: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    
+}
+.contact-form button {
+    width: 100%; /* Ensure button takes full width */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    background-color: #22577A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background:#245f87;
+}
+.contact-form button:active {
+    background:#26648e;
+}
+/* message on button click */
+.hidden-message{
+    display: none;
+}
+#message-sent{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 1rem;
+}
+/* end message button */
+/* contact page end */	
+/* about us page start*/
+
+
+
+
+
 
 
 
@@ -1280,6 +1374,20 @@ main{
     .terms-container{
         width: 80%;
     }
+    /* contact page */
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.5rem;
+    }
+    .contact-left-container{
+        width: 65%;
+    }
+    .contact-right-container{
+        width: 65%;
+    }
 }
 @media (max-width: 768px) {
     /* first page css */
@@ -1415,6 +1523,21 @@ main{
     .terms-container{
         width: 95%;
         margin-top: 7rem;
+    }
+    /* contact page */
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.5rem;
+    }
+    .contact-left-container{
+        width: 95%;
+        margin-bottom: 0px;
+    }
+    .contact-right-container{
+        width: 95%;
     }
 }
 
