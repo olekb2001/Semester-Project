@@ -91,7 +91,7 @@
     text-align: center;
     color: rgb(255, 255, 255);
     max-width: 90%; 
-    font-size: 1.5rem; 
+    font-size: 28px;
     padding: 10px;
     border-radius: 5px;
     overflow:hidden;
@@ -102,7 +102,7 @@
     margin-top: 2.5rem;
 }
 .hero-image .hero-text .hero-paragraph{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 450;
     margin-top: 2rem;;
@@ -166,7 +166,7 @@
 
 .sidebar .sidebar-container .sidebar-list .bottom-sidebar1 p{
     color:black;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -226,7 +226,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
